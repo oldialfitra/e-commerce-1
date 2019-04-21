@@ -7,7 +7,7 @@ const express = require('express'),
     cors = require('cors'),
     routerIndex = require('./routes/index')
 
-mongoose.connect(`mongodb://localhost:27017/${process.env.DBTESTNAME}`, { useNewUrlParser: true })
+mongoose.connect(`mongodb://localhost:27017/${process.env.DBNAME}`, { useNewUrlParser: true })
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(cors())
